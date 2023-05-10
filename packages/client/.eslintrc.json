@@ -1,0 +1,28 @@
+{
+  "extends": [
+    "../../.eslintrc.base.json",
+    "next/core-web-vitals",
+    "plugin:react/recommended",
+    "@unocss"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": ["react"],
+  "rules": {
+    "@next/next/no-html-link-for-pages": ["error", "packages/client/src/pages"],
+    "spaced-comment": ["warn", "always", { "markers": ["/"] }],
+    "react/jsx-no-useless-fragment": "warn",
+    "react/react-in-jsx-scope": "off",
+    "react/no-unknown-property": "off"
+    // "tailwindcss/classnames-order": [
+    //   "warn",
+    //   {
+    //     "callees": ["clsx"],
+    //     "classRegex": "^(?!viewBox)[a-zA-Z][a-zA-Z0-9-_]{2,}"
+    //   }
+    // ]
+  }
+}
